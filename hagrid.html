@@ -1,0 +1,297 @@
+<style>
+h1 {text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vh;
+    margin: 0 auto;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+}
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(175,184,193,0.2);
+    border-radius: 6px;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+.pl-ent {
+    color: #116329;
+}
+
+.pl-c1 {
+    color: #0550ae;
+}
+
+.pl-s {
+    color: #0a3069;
+}
+
+
+
+</style>
+
+<h1 id="hagrid-hand-gesture-recognition-image-dataset">HaGRID - HAnd Gesture Recognition Image Dataset</h1>
+<img src="images/hagrid/hagrid.jpeg" class="center" width="100px">
+
+<p><strong>HaGRID</strong>&nbsp;(<strong>HA</strong>nd&nbsp;<strong>G</strong>esture&nbsp;<strong>R</strong>ecognition&nbsp;<strong>I</strong>mage&nbsp;<strong>D</strong>ataset) is one of the largest datasets for hand gesture recognition (HGR) systems. You can use it for image classification or image detection tasks. Proposed dataset allows to build HGR systems, which can be used in video conferencing services (Zoom, Skype, Discord, Jazz etc.), home automation systems, the automotive sector, etc.</p>
+<p>HaGRID size is <strong>716GB</strong> and dataset contains <strong>552,992</strong> FullHD (1920 &times; 1080) RGB images divided into <strong>18</strong> classes of gestures. Also, some images have <code>no_gesture</code> class if there is a second free hand in the frame. This extra class contains <strong>123,589</strong> samples. The data were split into training 92%, and testing 8% sets by subject <code>user_id</code>, with 509,323 images for train and 43,669 images for test.</p>
+<img src="images/hagrid/gestures_grid.png" class="center">
+<p>The dataset contains <strong>34,730</strong> unique persons and at least this number of unique scenes. The subjects are people from 18 to 65 years old. The dataset was collected mainly indoors with considerable variation in lighting, including artificial and natural light. Besides, the dataset includes images taken in extreme conditions such as facing and backing to a window. Also, the subjects had to show gestures at a distance of 0.5 to 4 meters from the camera.</p>
+<p>For more information see our arxiv paper <a href="https://arxiv.org/abs/2206.08219">HaGRID - HAnd Gesture Recognition Image Dataset</a>.</p>
+<br>
+
+<h2 id="installation">Installation</h2>
+<p>We split the train dataset into 18 archives by gestures because of the large size of data. Download and unzip them from the following links:</p>
+<h3 id="tranval">Tranval</h3>
+<table>
+<thead>
+<tr>
+<th>Gesture</th>
+<th>Size</th>
+<th>Gesture</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sc.link/ykEn"><code>call</code></a></td>
+<td>39.1 GB</td>
+<td><a href="https://sc.link/l6nM"><code>peace</code></a></td>
+<td>38.6 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/xjDB"><code>dislike</code></a></td>
+<td>38.7 GB</td>
+<td><a href="https://sc.link/mXoG"><code>peace_inverted</code></a></td>
+<td>38.6 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/wgB8"><code>fist</code></a></td>
+<td>38.0 GB</td>
+<td><a href="https://sc.link/kMm6"><code>rock</code></a></td>
+<td>38.9 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/vJA5"><code>four</code></a></td>
+<td>40.5 GB</td>
+<td><a href="https://sc.link/gXgk"><code>stop</code></a></td>
+<td>38.3 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/r7wp"><code>like</code></a></td>
+<td>38.3 GB</td>
+<td><a href="https://sc.link/jJlv"><code>stop_inverted</code></a></td>
+<td>40.2 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/q8vp"><code>mute</code></a></td>
+<td>39.5 GB</td>
+<td><a href="https://sc.link/wgBr"><code>three</code></a></td>
+<td>39.4 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/pV0V"><code>ok</code></a></td>
+<td>39.0 GB</td>
+<td><a href="https://sc.link/vJA8"><code>three2</code></a></td>
+<td>38.5 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/oJqX"><code>one</code></a></td>
+<td>39.9 GB</td>
+<td><a href="https://sc.link/q8v7"><code>two_up</code></a></td>
+<td>41.2 GB</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/nJp7"><code>palm</code></a></td>
+<td>39.3 GB</td>
+<td><a href="https://sc.link/r7w2"><code>two_up_inverted</code></a></td>
+<td>39.2 GB</td>
+</tr>
+</tbody>
+</table>
+<p><code>train_val</code> <strong>annotations</strong>: <a href="https://sc.link/BE5Y"><code>ann_train_val</code></a></p>
+
+<h3 id="test">Test</h3>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Archives</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>images</td>
+<td><a href="https://sc.link/zlGy"><code>test</code></a></td>
+<td>60.4 GB</td>
+</tr>
+<tr>
+<td>annotations</td>
+<td><a href="https://sc.link/DE5K"><code>ann_test</code></a></td>
+<td>3.4 MB</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="subsample">Subsample</h3>
+<p>Subsample has 100 items per gesture.</p>
+<table>
+<thead>
+<tr>
+<th>Subsample</th>
+<th>Archives</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>images</td>
+<td><a href="https://sc.link/AO5l"><code>subsample</code></a></td>
+<td>2.5 GB</td>
+</tr>
+<tr>
+<td>annotations</td>
+<td><a href="https://sc.link/EQ5g"><code>ann_subsample</code></a></td>
+<td>153.8 KB</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2 id="models">Models</h2>
+<p>We provide some pre-trained models as the baseline with the classic backbone architectures and two output heads - for gesture classification and leading hand classification.</p>
+<table>
+<thead>
+<tr>
+<th>Classifiers</th>
+<th>F1 Gestures</th>
+<th>F1 Leading hand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sc.link/KEnx">ResNet18</a></td>
+<td>98.72</td>
+<td>99.27</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/O9rr">ResNet152</a></td>
+<td>99.11</td>
+<td><strong>99.45</strong></td>
+</tr>
+<tr>
+<td><a href="https://sc.link/GKjJ">ResNeXt50</a></td>
+<td>98.99</td>
+<td>99.39</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/JXmg">ResNeXt101</a></td>
+<td><strong>99.28</strong></td>
+<td>99.28</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/XVEg">MobileNetV3_small</a></td>
+<td>96.78</td>
+<td>98.28</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/YXG2">MobileNetV3_large</a></td>
+<td>97.88</td>
+<td>98.58</td>
+</tr>
+<tr>
+<td><a href="https://sc.link/XV4g">Vitb32</a></td>
+<td>98.49</td>
+<td>99.13</td>
+</tr>
+</tbody>
+</table>
+<p>Also we provide SSDLite model with MobileNetV3 large backbone to solve hand detection problem.</p>
+<table>
+<thead>
+<tr>
+<th>Detector</th>
+<th>mAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sc.link/YXg2">SSDLite</a></td>
+<td>71.49</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h2 id="annotations">Annotations</h2>
+<p>The annotations consist of bounding boxes of hands with gesture labels in COCO format <code>[top left X position, top left Y position, width, height]</code>. Also annotations have markups of <code>leading hands</code> (<code>left</code> of <code>right</code> for gesture hand) and <code>leading_conf</code> as confidence for <code>leading_hand</code> annotation. We provide <code>user_id</code> field that will allow you to split the train / val dataset yourself.</p>
+
+
+<pre><span class="pl-ent">"03487280-224f-490d-8e36-6c5f48e3d7a0"</span>: {
+  <span class="pl-ent">"bboxes"</span>: [
+    [<span class="pl-c1">0.0283366</span>, <span class="pl-c1">0.8686061</span>, <span class="pl-c1">0.0757000</span>, <span class="pl-c1">0.1149820</span>],
+    [<span class="pl-c1">0.6824319</span>, <span class="pl-c1">0.2661254</span>, <span class="pl-c1">0.1086447</span>, <span class="pl-c1">0.1481245</span>]
+  ],
+  <span class="pl-ent">"labels"</span>: [
+    <span class="pl-s"><span class="pl-pds">"</span>no_gesture<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>one<span class="pl-pds">"</span></span>
+  ],
+  <span class="pl-ent">"leading_hand"</span>: <span class="pl-s"><span class="pl-pds">"</span>left<span class="pl-pds">"</span></span>,
+  <span class="pl-ent">"leading_conf"</span>: <span class="pl-c1">1.0</span>,
+  <span class="pl-ent">"user_id"</span>: <span class="pl-s"><span class="pl-pds">"</span>bb138d5db200f29385f...<span class="pl-pds">"</span></span>
+}</pre>
+<ul>
+<li>Key - image name without extension</li>
+<li>Bboxes - list of normalized bboxes <code>[top left X pos, top left Y pos, width, height]</code></li>
+<li>Labels - list of class labels e.g. <code>like</code>, <code>stop</code>, <code>no_gesture</code></li>
+<li>Leading hand - <code>right</code> or <code>left</code> for hand which showing gesture</li>
+<li>Leading conf - leading confidence for <code>leading_hand</code></li>
+<li>User ID - subject id (useful for split data to train / val subsets).</li>
+</ul>
+<br>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://github.com/hukenovs/hagrid">Github</a></li>
+<li><a href="https://arxiv.org/abs/2206.08219">arXiv</a></li>
+<li><a href="https://www.kaggle.com/datasets/kapitanov/hagrid">Kaggle</a></li>
+</ul>
+<br>
+<h3 id="citation">Citation</h3>
+<p>You can cite the paper using the following BibTeX entry:</p>
+<p>   @article{hagrid,
+       title={HaGRID - HAnd Gesture Recognition Image Dataset},
+       author={Kapitanov, Alexander and Makhlyarchuk, Andrey and Kvanchiani, Karina},
+       journal={arXiv preprint arXiv:2206.08219},
+       year={2022}
+   }</p>
+<br>
+<h3 id="license">License</h3>
+<p>This work is licensed under a variant of Creative Commons Attribution-ShareAlike 4.0 International License.</p>
+<p>Please see the specific license.</p>
