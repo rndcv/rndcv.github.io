@@ -388,7 +388,7 @@ code {
 }
 
 .header-home {
-  background: transparent;
+  background: #2C2D31;
 /*box-shadow*/
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -555,7 +555,6 @@ code {
 .parallax-section {
   z-index: -1;
   clear: both;
-  background-image: url('images/home.jpg');
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -571,7 +570,7 @@ code {
 }
 
 .parallax-section .content-header, .home-slider .content-header {
-  padding: 145px 0 250px;
+  padding: 145px 0 0px;
 }
 
 .parallax2 .content {
@@ -586,7 +585,6 @@ code {
 .content-header h2,
 .parallax-section .content h3,
 .content-header h3 {
-  color: #fff;
 }
 
 .parallax-section h2 > span,
@@ -603,7 +601,6 @@ code {
 .parallax-section .content p, .top-slider .content-header p, .home-slider .content p {
   width: 70%;
   margin: 0 auto 30px auto;
-  color: #fff;
 }
 
 /* *********************************************************
