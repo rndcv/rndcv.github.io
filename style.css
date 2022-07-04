@@ -384,11 +384,11 @@ code {
 }
 
 .header-default {
-  background: #2C2D31;
+  background: #FFF;
 }
 
 .header-home {
-  background: #2C2D31;
+  background: #FFF;
 /*box-shadow*/
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
@@ -396,7 +396,6 @@ code {
 }
 
 .header-home .navigation a {
-  color: #fff;
 }
 
 .top-slider {
@@ -469,7 +468,7 @@ code {
   display: block;
   margin-left: 20px;
   padding-bottom: 3px;
-  color: #fff;
+  color: #000000;
 }
 
 .navigation .current a, .navigation ul li a:hover, .navigation ul li a:focus {
